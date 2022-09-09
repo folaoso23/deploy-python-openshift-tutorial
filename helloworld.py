@@ -14,9 +14,9 @@ app = Flask(__name__)    # Construct an instance of Flask class for our webapp
 @app.route('/')   # URL '/' to be handled by main() route handler
 def main():
     """Say hello"""
-    # with open('config.yml') as f:
-    #     content = f.read()
-    #     print(content)
+    with open('config.yml') as f:
+        content = f.read()
+        print(content)
     return 'Hello, world!'
 
 
